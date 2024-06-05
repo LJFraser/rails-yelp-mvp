@@ -1,0 +1,12 @@
+<h1>Restaurants#edit</h1>
+<p>Find me in app/views/restaurants/edit.html.erb</p>
+
+<!-- app/views/restaurants/_form.html.erb -->
+<P><%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.select :category, Restaurant::CATEGORY %>
+  <%= f.submit %>
+<% end %>
+</p>
